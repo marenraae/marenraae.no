@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Maren Kathrine Raae — CRM, systemer & AI</title>
-<meta name="description" content="Senior CRM- og systemkonsulent som bygger med AI. Broen mellom 15 år kundedata og ny teknologi — la oss se hva vi kan få til sammen." />
+<title>Maren Kathrine Raae, CRM og kundeklubb</title>
+<meta name="description" content="CRM og kundeklubb, operativt og strategisk. Jeg kan kundeklubb, kundereiser og kundedata innenfra, og har AI i verktøykassen. Fredrikstad, oppdrag for hele Norge." />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <link rel="alternate icon" href="favicon-32x32.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -113,7 +113,7 @@
   .hero-photo .stamp .t{font-size:12px;color:#e7c9d8;margin-top:4px}
 
   .marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ivory-2);overflow:hidden;padding:16px 0}
-  .marquee-track{display:flex;gap:0;white-space:nowrap;animation:scroll 32s linear infinite;width:max-content}
+  .marquee-track{display:flex;gap:0;white-space:nowrap;animation:scroll 44s linear infinite;width:max-content}
   .marquee-track span{font-family:var(--serif);font-size:19px;color:var(--ink);opacity:.72;padding:0 26px;position:relative}
   .marquee-track span::after{content:"·";position:absolute;right:-4px;color:var(--magenta)}
   @keyframes scroll{to{transform:translateX(-50%)}}
@@ -161,7 +161,8 @@
 
   .values{padding:84px 0}
   .values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:48px;border-top:1px solid var(--line)}
-  .value{padding:36px 30px 14px 0;border-right:1px solid var(--line)}
+  .value{padding:36px 30px 14px 30px;border-right:1px solid var(--line)}
+  .value:first-child{padding-left:0}
   .value:last-child{border-right:none;padding-right:0}
   .value .vn{font-family:var(--serif);font-size:13px;letter-spacing:.12em;color:var(--magenta)}
   .value h3{font-size:27px;margin:14px 0 12px}
@@ -171,6 +172,14 @@
     .value{border-right:none;border-bottom:1px solid var(--line);padding:28px 0}
     .value:last-child{border-bottom:none}
   }
+
+  .section-sub{font-size:17px;color:var(--muted);margin-top:14px}
+  .experience{padding:20px 0 80px}
+  .exp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .exp{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:30px 28px}
+  .exp img{height:44px;width:auto;margin-bottom:18px;opacity:.9;display:block}
+  .exp h3{font-size:23px;margin-bottom:10px}
+  .exp p{font-size:15px;color:var(--muted)}
 
   .work{padding:90px 0}
   .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
@@ -216,7 +225,7 @@
     .hero-grid,.intro-grid{grid-template-columns:1fr}
     .hero-photo{order:-1;max-width:360px}
     .stats-grid{grid-template-columns:repeat(2,1fr);gap:32px}
-    .svc-grid,.proj-grid{grid-template-columns:1fr}
+    .svc-grid,.proj-grid,.exp-grid{grid-template-columns:1fr}
     .vsteps{grid-template-columns:1fr}
     .vstep{border-right:none;border-bottom:1px solid rgba(240,169,204,.18);padding:28px 0}
     .vstep:last-child{border-bottom:none}
@@ -239,10 +248,10 @@
     <a href="#top" class="brand" data-i="brand">Maren Kathrine <b>Raae</b></a>
     <nav class="links" id="menu">
       <a href="#tjenester" data-i="nav1">Tjenester</a>
+      <a href="#erfaring" data-i="navE">Erfaring</a>
+      <a href="#prosjekter" data-i="nav4">Prosjekter</a>
       <a href="#om" data-i="nav2">Om meg</a>
       <a href="#verdier" data-i="navV">Verdier</a>
-      <a href="#visjon" data-i="nav3">Visjon</a>
-      <a href="#prosjekter" data-i="nav4">Prosjekter</a>
       <a href="#kontakt" data-i="nav5">Kontakt</a>
     </nav>
     <div class="nav-cta">
@@ -261,17 +270,17 @@
       <div class="reveal in">
         <span class="eyebrow" data-i="hero-eye">Fredrikstad · Østfold</span>
         <h1 data-html data-i="hero-h1">Hæll<span class="accent">æ</span>! La oss bygge <span class="accent">noe sammen.</span></h1>
-        <p class="lead" data-i="hero-lead">Senior CRM- og systemkonsulent som bygger med AI — broen mellom 15 år med kundekunnskap og ny teknologi.</p>
+        <p class="lead" data-i="hero-lead">Jeg kan CRM og kundeklubb innenfra, fra Europris og Oslo Fashion Outlet. Nå har jeg AI i verktøykassen også.</p>
         <div class="hero-cta">
-          <a href="#visjon" class="btn" data-i="hero-cta1">Se hva vi kan få til ↗</a>
-          <a href="#tjenester" class="btn ghost" data-i="hero-cta2">Hva jeg gjør</a>
+          <a href="#tjenester" class="btn" data-i="hero-cta1">Dette kan jeg hjelpe med ↗</a>
+          <a href="#kontakt" class="btn ghost" data-i="hero-cta2">Ta kontakt</a>
         </div>
       </div>
       <div class="hero-photo reveal in">
         <div class="frame"><img src="maren.jpg" alt="Maren Kathrine Raae" /></div>
         <div class="stamp">
-          <div class="n">420k+</div>
-          <div class="t" data-i="hero-stamp">kunder og medlemmer forvaltet</div>
+          <div class="n" data-i="hero-stamp-n">10 år</div>
+          <div class="t" data-i="hero-stamp">med CRM</div>
         </div>
       </div>
     </div>
@@ -280,8 +289,8 @@
   <!-- MARQUEE -->
   <div class="marquee">
     <div class="marquee-track">
-      <span>CRM</span><span>Kundeklubb</span><span>Segmentering</span><span>Nyhetsbrev</span><span>Automatisering</span><span>Systemintegrasjon</span><span>AI &amp; vibe coding</span><span>Lovable</span><span>Make.com</span><span>Kundereiser</span>
-      <span>CRM</span><span>Kundeklubb</span><span>Segmentering</span><span>Nyhetsbrev</span><span>Automatisering</span><span>Systemintegrasjon</span><span>AI &amp; vibe coding</span><span>Lovable</span><span>Make.com</span><span>Kundereiser</span>
+      <span>Kundeklubb</span><span>Lojalitetsprogram</span><span>CRM</span><span>Marketing Automation</span><span>Kundereiser</span><span>Segmentering</span><span>Nyhetsbrev</span><span>Kundeopplevelse</span><span>Budsjett og KPI</span><span>Coniq</span><span>HubSpot</span><span>Mailchimp</span><span>Claude</span>
+      <span>Kundeklubb</span><span>Lojalitetsprogram</span><span>CRM</span><span>Marketing Automation</span><span>Kundereiser</span><span>Segmentering</span><span>Nyhetsbrev</span><span>Kundeopplevelse</span><span>Budsjett og KPI</span><span>Coniq</span><span>HubSpot</span><span>Mailchimp</span><span>Claude</span>
     </div>
   </div>
 
@@ -289,10 +298,10 @@
   <section class="stats">
     <div class="wrap">
       <div class="stats-grid">
-        <div class="stat reveal"><div class="n">175<em>k</em></div><div class="t" data-i="stat1">Medlemmer · Fashion Club</div></div>
-        <div class="stat reveal"><div class="n">250<em>k</em></div><div class="t" data-i="stat2">Kunder · Europris CRM</div></div>
-        <div class="stat reveal"><div class="n">+10<em>%</em></div><div class="t" data-i="stat3">Økning i tracked transactions</div></div>
-        <div class="stat reveal"><div class="n">15<em>+</em></div><div class="t" data-i="stat4">År i bransjen</div></div>
+        <div class="stat reveal"><div class="n">175<em>k</em></div><div class="t" data-i="stat1">Medlemmer i Fashion Club, Oslo Fashion Outlet</div></div>
+        <div class="stat reveal"><div class="n">250<em>k</em></div><div class="t" data-i="stat2">Mottakere av nyhetsbrev, Europris</div></div>
+        <div class="stat reveal"><div class="n" data-i="stat3-n">+10<em>pp</em></div><div class="t" data-i="stat3">Prosentpoeng økning i registrerte transaksjoner på to uker, Oslo Fashion Outlet</div></div>
+        <div class="stat reveal"><div class="n" data-i="stat4-n">15<em> år</em></div><div class="t" data-i="stat4">i markedsføring</div></div>
       </div>
     </div>
   </section>
@@ -302,32 +311,91 @@
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow" data-i="svc-eye">Hva jeg kan</span>
-        <h2 data-html data-i="svc-h2">Tre klare måter jeg kan <span class="accent">hjelpe deg</span> på.</h2>
+        <h2 data-html data-i="svc-h2">Dette kan jeg <span class="accent">hjelpe deg</span> med</h2>
       </div>
       <div class="svc-grid">
         <div class="svc reveal">
           <span class="num">01</span>
-          <h3 data-i="svc1-h">CRM-drift, oppsett og optimalisering</h3>
-          <p data-i="svc1-p">Jeg går raskt inn i eksisterende CRM-systemer, data og rutiner — og sørger for at hjulene fortsetter å rulle. Sykemelding, gap eller ekstra kapasitet.</p>
-          <div class="tags"><span class="tag">CRM-drift</span><span class="tag">Segmentering</span><span class="tag">Datakvalitet</span><span class="tag">Rapportering</span></div>
+          <h3 data-i="svc1-h">Kundeklubb og lojalitet</h3>
+          <p data-i="svc1-p">Jeg tar oppstarten i verktøyet dere velger, og driver og utvikler klubben videre, slik at medlemmene kommer tilbake.</p>
         </div>
         <div class="svc reveal">
           <span class="num">02</span>
-          <h3 data-i="svc2-h">CRM-implementering og automatisering</h3>
-          <p data-i="svc2-p">Skal du sette opp nytt CRM, koble sammen systemer eller automatisere manuelle prosesser? Jeg bygger det riktig — med struktur, dataflyt og rutiner som holder over tid.</p>
-          <div class="tags"><span class="tag">CRM-oppsett</span><span class="tag">Integrasjon</span><span class="tag">Dataflyt</span><span class="tag">Automatisering</span></div>
+          <h3 data-i="svc2-h">Automatiserte kundereiser</h3>
+          <p data-i="svc2-p">Fra nytt lead til kjøp, mersalg og gjenkjøp. Riktig melding til riktig kunde, uten at noen må huske å trykke send.</p>
         </div>
         <div class="svc reveal">
           <span class="num">03</span>
-          <h3 data-i="svc3-h">Løsninger bygget med no-code & AI</h3>
-          <p data-i="svc3-p">Profesjonell nettside eller AI-drevet arbeidsflyt — bygget med struktur og opplæring, slik at du eier og oppdaterer den selv. Ingen binding.</p>
-          <div class="tags"><span class="tag">WordPress</span><span class="tag">AI-flyt</span><span class="tag">Opplæring</span></div>
+          <h3 data-i="svc3-h">Måling og kundedata</h3>
+          <p data-i="svc3-p">Tall som henger sammen med salg og økonomi, og kundedata som er ryddig, med samtykke og GDPR på plass. Jeg trives tett på KPI-ene.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- INTRO / ABOUT -->
+  <!-- ERFARING -->
+  <section class="experience" id="erfaring">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i="exp-eye">Erfaring</span>
+        <h2 data-html data-i="exp-h2">Det jeg har <span class="accent">jobbet med</span></h2>
+      </div>
+      <div class="exp-grid">
+        <div class="exp reveal">
+          <img src="oslo-fashion-outlet-logo.png" alt="Oslo Fashion Outlet" />
+          <h3>Oslo Fashion Outlet</h3>
+          <p data-i="exp1-p">Ansvarlig for CRM og videreutviklet Fashion Club. Bygde kundereisene fra velkomst til gjenvinning, og målte engasjement mot registrerte medlemskjøp i kampanjeperiodene.</p>
+        </div>
+        <div class="exp reveal">
+          <img src="europris-logo.png" alt="Europris" />
+          <h3>Europris</h3>
+          <p data-i="exp2-p">Begynte som grafisk designer og lagde annonser til alle butikkene i Norge og kundeavisen. Gikk over til å lage og sende ut nyhetsbrev. Var med å etablere nettbutikken og klikk og hent-løsningen med søndagskupp, og var med å bygge opp kundeklubben.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROSJEKTER -->
+  <section class="work" id="prosjekter">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i="proj-eye">Hva jeg har bygget</span>
+        <h2 data-html data-i="proj-h2">Ting jeg har bygget selv, <span class="accent">med AI som verktøy</span></h2>
+        <p class="section-sub" data-i="proj-sub">Jeg lærer best ved å lage ting. Her er tre.</p>
+      </div>
+      <div class="proj-grid">
+        <div class="proj reveal">
+          <div class="thumb"><img src="dagens.png" alt="dagens.app" /></div>
+          <div class="body">
+            <div class="role" data-i="p1-role">Lovable + Supabase</div>
+            <h3>dagens.app</h3>
+            <p data-i="p1-p">Quiz for teambuilding, på norsk. Laget uten utvikler, til fredagsquiz og kvartalsmøter.</p>
+            <a href="https://dagens.app" target="_blank" rel="noopener" class="lnk">dagens.app ↗</a>
+          </div>
+        </div>
+        <div class="proj reveal">
+          <div class="thumb"><img src="illechill.png" alt="Ille Chill nettbutikk" /></div>
+          <div class="body">
+            <div class="role" data-i="p2-role">Nettbutikk</div>
+            <h3>Ille Chill</h3>
+            <p data-i="p2-p">Nettbutikk der produktene trykkes når noen bestiller. Laget uten utvikler og designbyrå.</p>
+            <a href="https://illechill.no" target="_blank" rel="noopener" class="lnk">illechill.no ↗</a>
+          </div>
+        </div>
+        <div class="proj reveal">
+          <div class="thumb"><img src="saal-webside.png" alt="Søre Ål IL nettside" /></div>
+          <div class="body">
+            <div class="role" data-i="p3-role">WordPress + Claude</div>
+            <h3>Søre Ål IL</h3>
+            <p data-i="p3-p">Ny nettside til idrettslaget, laget gratis. De oppdaterer den selv. Bygget i Claude.</p>
+            <a href="https://saal.no" target="_blank" rel="noopener" class="lnk">saal.no ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HVEM JEG ER -->
   <section class="intro" id="om">
     <div class="wrap intro-grid">
       <div class="intro-photo reveal">
@@ -335,18 +403,9 @@
       </div>
       <div class="reveal">
         <span class="eyebrow" data-i="about-eye">Hei, jeg er Maren</span>
-        <h2 data-html data-i="about-h2">Jeg kjenner CRM-systemene <span class="accent">innenfra</span> — og bygger fremtiden med AI.</h2>
-        <p data-i="about-p1">Strukturert og operativ CRM- og systemperson med over 15 års erfaring fra retail, kundedata og digitale plattformer. Jeg har bygget kundeklubber og CRM-løp fra scratch, driftet systemer med hundretusenvis av kontakter, og jobbet både operativt og strategisk.</p>
-        <p data-i="about-p2">De siste årene har jeg kastet meg inn i AI og vibe coding — og bygget egne apper, nettsider og nettbutikker med verktøy som Lovable, Claude og Make.com. Jeg trives like godt med å sette opp systemer som å brette opp ermene og gjøre jobben selv.</p>
-        <p data-i="about-person">Som person er jeg nysgjerrig og analytisk — jeg stiller spørsmål, ser ting fra alle sider og trekker ikke forhastede konklusjoner. Jeg leser folk godt, er ærlig og jordnær, og gir meg ikke før oppgaven er i mål.</p>
-        <div class="tags" style="margin-top:22px">
-          <span class="tag" data-i="trait1">Nysgjerrig</span>
-          <span class="tag" data-i="trait2">Analytisk</span>
-          <span class="tag" data-i="trait3">Ærlig &amp; jordnær</span>
-          <span class="tag" data-i="trait4">Menneskekjenner</span>
-          <span class="tag" data-i="trait5">Utholdende</span>
-        </div>
-        <p class="sign" data-i="about-sign" style="margin-top:28px">Broen mellom erfaren CRM-kompetanse og ny teknologi.</p>
+        <h2 data-html data-i="about-h2">Hvem jeg er <span class="accent">ellers</span></h2>
+        <p data-i="about-p1">Jeg bor i Fredrikstad med hunden Astrid. Jeg kjøpte et hus og pusset det opp selv, fra start til ferdig. Jeg jobber på samme måte med kundeklubb: jeg vil eie hele løpet.</p>
+        <p data-i="about-p2">Som ung turnet jeg på høyt nivå og tok NM-gull i hopp og skranke (junior, 1999) og i troppsturn (2000).</p>
       </div>
     </div>
   </section>
@@ -356,119 +415,36 @@
     <div class="wrap">
       <div class="section-head reveal" style="margin-bottom:0">
         <span class="eyebrow" data-i="val-eye">Verdiene mine</span>
-        <h2 data-html data-i="val-h2">Det jeg <span class="accent">står for</span>.</h2>
+        <h2 data-html data-i="val-h2">Det jeg <span class="accent">står for</span></h2>
       </div>
       <div class="values-grid">
         <div class="value reveal">
           <div class="vn">01</div>
           <h3 data-i="val1-h">Integritet</h3>
-          <p data-i="val1-p">Jeg sier ifra når noe ikke henger sammen, og leverer det jeg lover. Du skal kunne stole på at jeg er ærlig — også når det er enklere å la være.</p>
+          <p data-i="val1-p">Du får ærlige svar fra meg, også om hva som ikke kommer til å virke.</p>
         </div>
         <div class="value reveal">
           <div class="vn">02</div>
           <h3 data-i="val2-h">Eierskap</h3>
-          <p data-i="val2-p">Jeg tar ansvar fra idé til ferdig resultat. Oppgaver faller ikke mellom stolene hos meg — jeg ser dem helt i mål.</p>
+          <p data-i="val2-p">Jeg liker å se hele kundeløpet og finne der vi kan påvirke det. Gode mål er det som driver meg.</p>
         </div>
         <div class="value reveal">
           <div class="vn">03</div>
-          <h3 data-i="val3-h">Lærevillig</h3>
-          <p data-i="val3-p">Jeg møter ny teknologi og nye systemer med nysgjerrighet. Det jeg ikke kan i dag, lærer jeg meg raskt.</p>
+          <h3 data-i="val3-h">Lærevillighet</h3>
+          <p data-i="val3-p">Bachelor i mediemanagement (Høgskolen i Gjøvik, 2003 til 2006) og årsstudium i bærekraftig økonomi og ledelse (NMBU, deltid, 2023 til 2025). I tillegg tre prosjekter jeg har bygget selv med AI.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- VISION -->
-  <section class="vision" id="visjon">
-    <div class="wrap">
-      <div class="reveal">
-        <span class="eyebrow" data-i="vis-eye">Visjon sammen</span>
-        <h2 data-html data-i="vis-h2">Hva kan <span style="color:#f0a9cc;font-style:italic">vi</span> få til sammen?</h2>
-        <p class="sub" data-i="vis-sub">Jeg tror det mest spennende skjer i møtet mellom solid kundekunnskap og ny teknologi. Her er tre måter vi kan skape verdi sammen — uansett hvor du starter.</p>
-      </div>
-      <div class="vsteps">
-        <div class="vstep reveal">
-          <div class="idx">[01]</div>
-          <h3 data-i="vis1-h">Vi henter ut verdien som allerede ligger der</h3>
-          <p data-i="vis1-p">Du har dataen og medlemmene. Sammen bygger vi segmentering, kundereiser og automatisering som faktisk konverterer — og gjør kundeklubben til en motor, ikke en kostnad.</p>
-        </div>
-        <div class="vstep reveal">
-          <div class="idx">[02]</div>
-          <h3 data-i="vis2-h">Vi setter AI i arbeid i hverdagen din</h3>
-          <p data-i="vis2-p">Innhold, nyhetsbrev, rapporter og repeterende oppgaver — vi bygger AI-drevne arbeidsflyter med verktøy som Make.com og Claude, slik at teamet ditt får tid til det som betyr noe.</p>
-        </div>
-        <div class="vstep reveal">
-          <div class="idx">[03]</div>
-          <h3 data-i="vis3-h">Vi bygger noe nytt fra idé til live</h3>
-          <p data-i="vis3-p">En app, en kampanje eller en hel plattform. Med vibe coding går vi fra idé til fungerende produkt uten et stort utviklerteam — raskt, rimelig og eid av deg.</p>
-        </div>
-      </div>
-      <div class="vision-cta">
-        <a href="#kontakt" class="btn light" data-i="vis-cta">La oss ta en prat ↗</a>
-        <span style="color:#cdb0be;font-size:15px" data-i="vis-note">Remote eller på stedet — fra Fredrikstad, for hele Norge.</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- CURIOSITY / PROJECTS -->
-  <section class="work" id="prosjekter">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow" data-i="proj-eye">Hva jeg er nysgjerrig på</span>
-        <h2 data-html data-i="proj-h2">Ting jeg har bygget selv — <span class="accent">med idé, kunnskap og AI.</span></h2>
-      </div>
-      <div class="proj-grid">
-        <div class="proj reveal">
-          <div class="thumb"><img src="dagens.png" alt="dagens.app" /></div>
-          <div class="body">
-            <div class="role" data-i="p1-role">SaaS · Lovable + Supabase</div>
-            <h3>dagens.app</h3>
-            <p data-i="p1-p">Norsk teambuilding via quiz. Bygget fra idé til nær lansering uten utvikler — fredagsquiz og kvartalsmøter med god stemning.</p>
-            <a href="https://dagens.app" target="_blank" rel="noopener" class="lnk">dagens.app ↗</a>
-          </div>
-        </div>
-        <div class="proj reveal">
-          <div class="thumb"><img src="illechill.png" alt="Ille Chill nettbutikk" /></div>
-          <div class="body">
-            <div class="role" data-i="p2-role">Nettbutikk · Print-on-demand</div>
-            <h3>Ille Chill</h3>
-            <p data-i="p2-p">Passiv print-on-demand-butikk bygget fra scratch med AI. Fra idé til live nettbutikk — ingen utvikler, ingen designbyrå.</p>
-            <a href="https://illechill.no" target="_blank" rel="noopener" class="lnk">illechill.no ↗</a>
-          </div>
-        </div>
-        <div class="proj reveal">
-          <div class="thumb"><img src="saal-webside.png" alt="Søre Ål IL nettside" /></div>
-          <div class="body">
-            <div class="role" data-i="p3-role">Nettside · WordPress + Claude</div>
-            <h3>Søre Ål IL</h3>
-            <p data-i="p3-p">Nettside idrettslaget driver selv, bygget med vibe coding i Claude — enkel å oppdatere, laget gratis for laget.</p>
-            <a href="https://saal.no" target="_blank" rel="noopener" class="lnk">saal.no ↗</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROOF -->
-  <section class="proof">
-    <div class="wrap">
-      <span class="eyebrow" style="justify-content:center" data-i="proof-eye">Erfaring du kan stole på</span>
-      <h2 data-i="proof-h2">15 år i norsk retail — hundretusenvis av kunder og medlemmer forvaltet.</h2>
-      <div class="logos">
-        <img src="oslo-fashion-outlet-logo.png" alt="Oslo Fashion Outlet" />
-        <img src="europris-logo.png" alt="Europris" />
-      </div>
-    </div>
-  </section>
-
-  <!-- CLOSING CTA -->
+  <!-- KONTAKT -->
   <section class="closing" id="kontakt">
     <div class="wrap">
       <div class="closing-card reveal">
-        <h2 data-html data-i="close-h2">La oss ta en <span style="font-style:italic">prat?</span></h2>
-        <p data-i="close-p">Lurer du på om vi passer sammen? Send meg en melding, så finner vi ut av det — og ser hva vi kan bygge sammen.</p>
+        <h2 data-html data-i="close-h2">La oss ta en <span style="font-style:italic">prat</span></h2>
+        <p data-i="close-p">Send meg en e-post eller en melding på LinkedIn, så tar vi det derfra. Jeg bor i Fredrikstad og tar oppdrag for hele Norge, på nett eller på stedet.</p>
         <div class="hero-cta">
-          <a href="mailto:maren@marenraae.no" class="btn light" data-i="close-cta1">Send meg en mail</a>
+          <a href="mailto:maren@marenraae.no" class="btn light" data-i="close-cta1">maren@marenraae.no</a>
           <a href="https://www.linkedin.com/in/maren-kathrine-raae/" target="_blank" rel="noopener" class="btn ghost" style="color:#fff;border-color:rgba(255,255,255,.5)" data-i="close-cta2">Finn meg på LinkedIn</a>
         </div>
       </div>
@@ -482,15 +458,15 @@
     <div class="foot-grid">
       <div>
         <div class="brand">Maren Kathrine Raae</div>
-        <p style="max-width:34ch;font-size:14.5px" data-i="foot-tag">Broen mellom 15 år kundekunnskap og ny teknologi. Fredrikstad · Østfold.</p>
+        <p style="max-width:34ch;font-size:14.5px" data-i="foot-tag">CRM og kundeklubb, operativt og strategisk. Fredrikstad · Østfold.</p>
       </div>
       <div class="foot-links">
         <div class="foot-col">
           <h4 data-i="foot-nav">Navigasjon</h4>
           <a href="#tjenester" data-i="nav1">Tjenester</a>
-          <a href="#om" data-i="nav2">Om meg</a>
-          <a href="#visjon" data-i="nav3">Visjon</a>
+          <a href="#erfaring" data-i="navE">Erfaring</a>
           <a href="#prosjekter" data-i="nav4">Prosjekter</a>
+          <a href="#om" data-i="nav2">Om meg</a>
         </div>
         <div class="foot-col">
           <h4 data-i="foot-connect">Kontakt</h4>
@@ -519,61 +495,55 @@
 
   const EN = {
     brand:'Maren Kathrine <b>Raae</b>',
-    nav1:'Services', nav2:'About', nav3:'Vision', nav4:'Projects', nav5:'Contact', navcta:'Get in touch',
+    nav1:'Services', nav2:'About', navV:'Values', navE:'Experience', nav4:'Projects', nav5:'Contact', navcta:'Get in touch',
     'hero-eye':'Fredrikstad · Norway',
     'hero-h1':'Hell<span class="accent">o</span>! Let’s build <span class="accent">something together.</span>',
-    'hero-lead':'Senior CRM & systems consultant building with AI — the bridge between 15 years of customer insight and new technology.',
-    'hero-cta1':'See what we can do ↗', 'hero-cta2':'What I do',
-    'hero-stamp':'customers & members managed',
-    stat1:'Members · Fashion Club', stat2:'Customers · Europris CRM', stat3:'Rise in tracked transactions', stat4:'Years in the field',
+    'hero-lead':'I know CRM and loyalty clubs from the inside, from Europris and Oslo Fashion Outlet. Now I have AI in my toolbox too.',
+    'hero-cta1':'What I can help with ↗', 'hero-cta2':'Get in touch',
+    'hero-stamp-n':'10 years', 'hero-stamp':'in CRM',
+    stat1:'Members in Fashion Club, Oslo Fashion Outlet',
+    stat2:'Newsletter recipients, Europris',
+    'stat3-n':'+10<em>pp</em>',
+    stat3:'Percentage points increase in tracked transactions over two weeks, Oslo Fashion Outlet',
+    'stat4-n':'15<em> years</em>',
+    stat4:'in marketing',
     'svc-eye':'What I can do',
-    'svc-h2':'Three clear ways I can <span class="accent">help you</span>.',
-    'svc1-h':'CRM operations, setup & optimization',
-    'svc1-p':'I step quickly into existing CRM systems, data and routines — and keep the wheels turning. Sick leave, a gap, or extra capacity.',
-    'svc2-h':'CRM implementation & automation',
-    'svc2-p':'Setting up a new CRM, connecting systems or automating manual processes? I build it right — with structure, data flow and routines that last.',
-    'svc3-h':'Solutions built with no-code & AI',
-    'svc3-p':'A professional website or an AI-driven workflow — built with structure and training, so you own and update it yourself. No lock-in.',
+    'svc-h2':'What I can <span class="accent">help you</span> with',
+    'svc1-h':'Loyalty club and loyalty',
+    'svc1-p':'I handle the start-up in the tool you choose, then run and develop the club further, so members keep coming back.',
+    'svc2-h':'Automated customer journeys',
+    'svc2-p':'From new lead to purchase, upsell and repeat purchase. The right message to the right customer, without anyone having to remember to press send.',
+    'svc3-h':'Measurement and customer data',
+    'svc3-p':'Numbers that connect to sales and finance, and customer data that is tidy, with consent and GDPR in place. I enjoy working close to the KPIs.',
+    'exp-eye':'Experience',
+    'exp-h2':'What I have <span class="accent">worked with</span>',
+    'exp1-p':'Responsible for CRM and developed Fashion Club further. Built the customer journeys from welcome to win-back, and measured engagement against registered member purchases in campaign periods.',
+    'exp2-p':'Started as a graphic designer, making ads for all the stores in Norway and the customer magazine. Moved on to writing and sending newsletters. Helped establish the web shop and the click and collect solution with Sunday deals, and helped build up the loyalty club.',
+    'proj-eye':'What I have built',
+    'proj-h2':'Things I have built myself, <span class="accent">with AI as a tool</span>',
+    'proj-sub':'I learn best by making things. Here are three.',
+    'p1-role':'Lovable + Supabase',
+    'p1-p':'A team-building quiz, in Norwegian. Made without a developer, for Friday quizzes and quarterly meetings.',
+    'p2-role':'Web shop',
+    'p2-p':'A web shop where products are printed when someone orders. Made without a developer or a design agency.',
+    'p3-role':'WordPress + Claude',
+    'p3-p':'A new website for the sports club, made for free. They update it themselves. Built in Claude.',
     'about-eye':'Hi, I’m Maren',
-    'about-h2':'I know CRM systems <span class="accent">from the inside</span> — and I build the future with AI.',
-    'about-p1':'A structured, hands-on CRM & systems specialist with 15+ years in retail, customer data and digital platforms. I’ve built loyalty clubs and CRM setups from scratch, run systems with hundreds of thousands of contacts, and worked both operationally and strategically.',
-    'about-p2':'In recent years I’ve dived into AI and vibe coding — building my own apps, websites and shops with tools like Lovable, Claude and Make.com. I enjoy setting up systems as much as rolling up my sleeves and doing the work myself.',
-    'about-person':'As a person I’m curious and analytical — I ask questions, look at things from every angle, and don’t jump to conclusions. I read people well, I’m honest and down to earth, and I don’t stop until the job is done.',
-    trait1:'Curious', trait2:'Analytical', trait3:'Honest &amp; grounded', trait4:'People-smart', trait5:'Persevering',
-    'about-sign':'The bridge between seasoned CRM expertise and new technology.',
-    navV:'Values',
+    'about-h2':'Who I am <span class="accent">otherwise</span>',
+    'about-p1':'I live in Fredrikstad with my dog Astrid. I bought a house and renovated it myself, from start to finish. I work the same way with loyalty clubs: I want to own the whole journey.',
+    'about-p2':'When I was young I did gymnastics at a high level and won national championship gold in vault and springboard (junior, 1999) and in team gymnastics (2000).',
     'val-eye':'My values',
-    'val-h2':'What I <span class="accent">stand for</span>.',
+    'val-h2':'What I <span class="accent">stand for</span>',
     'val1-h':'Integrity',
-    'val1-p':'I speak up when something doesn’t add up, and I deliver what I promise. You can trust that I’m honest — even when it would be easier not to be.',
+    'val1-p':'You get honest answers from me, also about what is not going to work.',
     'val2-h':'Ownership',
-    'val2-p':'I take responsibility from idea to finished result. Tasks don’t fall through the cracks with me — I see them all the way through.',
-    'val3-h':'Eager to learn',
-    'val3-p':'I meet new technology and new systems with curiosity. What I can’t do today, I learn fast.',
-    'vis-eye':'Vision together',
-    'vis-h2':'What can <span style="color:#f0a9cc;font-style:italic">we</span> build together?',
-    'vis-sub':'I believe the most exciting things happen where solid customer knowledge meets new technology. Three ways we can create value together — wherever you start.',
-    'vis1-h':'We unlock the value already there',
-    'vis1-p':'You have the data and the members. Together we build segmentation, customer journeys and automation that actually convert — turning the loyalty club into an engine, not a cost.',
-    'vis2-h':'We put AI to work in your everyday',
-    'vis2-p':'Content, newsletters, reports and repetitive tasks — we build AI-driven workflows with tools like Make.com and Claude, freeing your team for what matters.',
-    'vis3-h':'We build something new, idea to live',
-    'vis3-p':'An app, a campaign or a whole platform. With vibe coding we go from idea to working product without a big dev team — fast, affordable and owned by you.',
-    'vis-cta':'Let’s talk ↗', 'vis-note':'Remote or on-site — from Fredrikstad, for all of Norway.',
-    'proj-eye':'What I’m curious about',
-    'proj-h2':'Things I’ve built myself — <span class="accent">with idea, knowledge and AI.</span>',
-    'p1-role':'SaaS · Lovable + Supabase',
-    'p1-p':'Norwegian team-building via quiz. Built from idea to near launch with no developer — Friday quizzes and quarterly meetings with good vibes.',
-    'p2-role':'Web shop · Print-on-demand',
-    'p2-p':'A passive print-on-demand shop built from scratch with AI. From idea to live store — no developer, no design agency.',
-    'p3-role':'Website · WordPress + Claude',
-    'p3-p':'A website the sports club runs itself, built with vibe coding in Claude — easy to update, made for free for the club.',
-    'proof-eye':'Experience you can trust',
-    'proof-h2':'15 years in Norwegian retail — hundreds of thousands of customers and members managed.',
-    'close-h2':'Shall we <span style="font-style:italic">talk?</span>',
-    'close-p':'Wondering if we’re a fit? Send me a message and we’ll figure it out — and see what we can build together.',
-    'close-cta1':'Send me an email', 'close-cta2':'Find me on LinkedIn',
-    'foot-tag':'The bridge between 15 years of customer knowledge and new technology. Fredrikstad · Norway.',
+    'val2-p':'I like to see the whole customer journey and find where we can influence it. Good goals are what drive me.',
+    'val3-h':'Willingness to learn',
+    'val3-p':'Bachelor in media management (Høgskolen i Gjøvik, 2003 to 2006) and a one-year study in sustainable economics and management (NMBU, part-time, 2023 to 2025). Plus three projects I have built myself with AI.',
+    'close-h2':'Let’s have a <span style="font-style:italic">chat</span>',
+    'close-p':'Send me an email or a message on LinkedIn, and we’ll take it from there. I live in Fredrikstad and take assignments all over Norway, online or on site.',
+    'close-cta1':'maren@marenraae.no', 'close-cta2':'Find me on LinkedIn',
+    'foot-tag':'CRM and loyalty clubs, operational and strategic. Fredrikstad · Norway.',
     'foot-nav':'Navigation', 'foot-connect':'Contact', 'foot-made':'Built with structure, coffee and AI.'
   };
   const NO = {};
