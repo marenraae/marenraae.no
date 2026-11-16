@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>dagens.app, quiz- og tippeapp for team | Maren Kathrine Raae</title>
+<meta name="description" content="dagens.app er en quiz- og tippeapp for norske team, med API-er som henter inn kamper og resultater. Se hva jeg gjorde og hva jeg lærte." />
+<link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+<link rel="alternate icon" href="../favicon-32x32.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../case.css?v=3" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="../index.html" class="brand">Maren Kathrine <b>Raae</b></a>
+    <div class="nav-cta">
+      <a href="../index.html#prosjekter" class="back" data-i="back">← Alle prosjekter</a>
+      <button class="lang" id="lang">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="case-hero">
+    <div class="wrap">
+      <span class="eyebrow" data-i="eye">Case · Produkt bygget med AI</span>
+      <h1>dagens.app</h1>
+      <p class="lead" data-i="lead">En quiz- og tippeapp for norske team. Her er hva jeg gjorde og hva jeg lærte.</p>
+      <p style="margin-top:26px"><a href="https://dagens.app" target="_blank" rel="noopener" class="btn" data-i="app-lnk">Se appen ↗</a></p>
+
+      <div class="facts">
+        <div class="fact"><div class="k" data-i="f1k">Min rolle</div><div class="v" data-i="f1v">Alt: idé, produkt, design, bygging og drift</div></div>
+        <div class="fact"><div class="k" data-i="f2k">For hvem</div><div class="v" data-i="f2v">Team på norske arbeidsplasser</div></div>
+        <div class="fact"><div class="k" data-i="f3k">Verktøy</div><div class="v">Lovable, Supabase, GitHub, AI</div></div>
+        <div class="fact"><div class="k" data-i="f4k">Det som fungerte</div><div class="v" data-i="f4v">VM-tipping med API-er</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shot-wrap">
+    <div class="wrap">
+      <div class="shot"><img src="forside.jpg" alt="Forsiden på dagens.app: Ingen vet svaret på forhånd. Det er poenget." width="1600" height="1000" /></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap narrow">
+      <span class="eyebrow" data-i="a-eye">Utgangspunktet</span>
+      <h2 data-i="a-h">Hvordan får du folk til å komme tilbake, uke etter uke?</h2>
+      <p data-i="a-p1">De fleste teamquizer avsluttes etter én kveld, og så skjer det ikke mer. Jeg ville løse et annet problem: å skape en vane som teamet holder i gang selv, uten at noen må følge opp.</p>
+      <p data-i="a-p2">Løsningen ble en konkurranse som varer over tid. Teamet svarer på nye spørsmål, samler poeng og følger en ligatabell. Spørsmålene er laget slik at svaret ikke kan søkes opp, og fasiten kommer først når alle har svart. Samtalen kommer da før svaret, og det er der samholdet bygges.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow" data-i="b-eye">Det jeg gjorde</span>
+      <h2 data-i="b-h">Hele appen, fra idé til drift</h2>
+      <ul class="did">
+        <li><span class="v" data-i="d1v">Definerte</span><span class="t" data-i="d1t">behovet: en enkel konkurranse for fredagsquiz, kvartalsmøter og team som aldri er på samme sted.</span></li>
+        <li><span class="v" data-i="d2v">Designet</span><span class="t" data-i="d2t">opplevelsen slik at den er klar på to minutter: opprett, del en lenke, og teamet er i gang.</span></li>
+        <li><span class="v" data-i="d3v">Bygget inn</span><span class="t" data-i="d3t">en grunn til å komme tilbake: ukentlig rytme, poeng, ligatabell og kåring av kvartalets quiz-mester.</span></li>
+        <li><span class="v" data-i="d4v">Skrev</span><span class="t" data-i="d4t">over 150 ferdige spørsmål sortert etter anledning, og gjorde det mulig å bruke egne KPI-er som spørsmål.</span></li>
+        <li><span class="v" data-i="d5v">Bygget</span><span class="t" data-i="d5t">appen med Lovable og Supabase, med GitHub til koden, på norsk, engelsk og svensk, installerbar på mobilen.</span></li>
+        <li><span class="v" data-i="d6v">Satte opp</span><span class="t" data-i="d6t">API-er som henter inn kamper og resultater for VM 2026 og Eliteserien, og som deler ut poeng automatisk.</span></li>
+        <li><span class="v" data-i="d7v">Satte opp</span><span class="t" data-i="d7t">samtykke for statistikk og annonser, og informasjon om hva som skjer med svarene.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap narrow">
+      <span class="eyebrow" data-i="m-eye">Det som fungerte</span>
+      <h2 data-i="m-h">VM-tipping</h2>
+      <p data-i="m-p1">VM-tippingen fungerte. Jeg satte opp API-er som hentet inn kamper og resultater, og appen delte ut poeng til deltakerne automatisk.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <span class="eyebrow" data-i="c-eye">Slik fungerte det</span>
+      <h2 data-i="c-h">Klar på to minutter</h2>
+      <ol class="steps">
+        <li><h3 data-i="s1h">Opprett en konkurranse</h3><p data-i="s1p">Velg blant over 150 ferdige spørsmål, eller lag egne tilpasset teamet.</p></li>
+        <li><h3 data-i="s2h">Del lenken</h3><p data-i="s2p">Kopier lenken og del den i Teams, Slack eller på e-post. Teamet kan starte umiddelbart.</p></li>
+        <li><h3 data-i="s3h">Teamet gjetter og diskuterer</h3><p data-i="s3p">Hvem tror på hvem? Debatten starter før fasiten er klar.</p></li>
+        <li><h3 data-i="s4h">Sesongpoeng</h3><p data-i="s4p">Poeng bygges opp uke for uke, og laget kårer kvartalets quiz-mester.</p></li>
+      </ol>
+      <div class="shots-2" style="margin-top:36px">
+        <div>
+          <div class="shot"><img src="inspirasjon.jpg" alt="Inspirasjonssiden med over 150 ferdige spørsmål sortert etter anledning" width="1600" height="1000" loading="lazy" /></div>
+          <p class="caption" data-i="cap2">Inspirasjonssiden: ferdige spørsmål sortert etter anledning.</p>
+        </div>
+        <div>
+          <div class="shot phone"><img src="mobil.jpg" alt="dagens.app på mobil" width="640" height="1385" loading="lazy" /></div>
+          <p class="caption" style="text-align:center" data-i="cap3">Appen på mobil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block dark">
+    <div class="wrap">
+      <span class="eyebrow" data-i="v-eye">Det jeg lærte</span>
+      <h2 data-i="v-h">Det er mye som kan gå galt</h2>
+      <div class="points four">
+        <div class="point"><div class="n">01</div><h3 data-i="v1h">Programmene du trenger</h3><p data-i="v1p">Hvilke programmer og verktøy som må på plass for at en app skal fungere.</p></div>
+        <div class="point"><div class="n">02</div><h3 data-i="v2h">Hvor mye jobb det er</h3><p data-i="v2p">Det ligger mye arbeid bak noe som skal fungere automatisk.</p></div>
+        <div class="point"><div class="n">03</div><h3 data-i="v3h">Stegene i kundereisen</h3><p data-i="v3p">En kundereise har mange steg på den tekniske siden, og hvert steg må fungere.</p></div>
+        <div class="point"><div class="n">04</div><h3 data-i="v4h">Det som kan gå galt</h3><p data-i="v4p">Mye kan gå galt underveis, og det må kunne løses raskt.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap narrow">
+      <span class="eyebrow" data-i="w-eye">Underveis</span>
+      <h2 data-i="w-h">Utfordringer</h2>
+      <p data-i="w-p1">Det vanskeligste var å tenke gjennom alt i forkant. Det gjaldt særlig VM, der appen skulle hente kamper og resultater og dele ut poeng automatisk.</p>
+      <p data-i="w-p2">VM kunne ikke testes på forhånd. Feil dukket derfor opp underveis, og jeg løste dem fortløpende.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap narrow">
+      <span class="eyebrow" data-i="r-eye">Resultatet</span>
+      <h2 data-i="r-h">Hva jeg satt igjen med</h2>
+      <p data-i="r-p1">Jeg satt igjen med dypere kunnskap om hvor krevende det er å sette opp noe som skal fungere automatisk, og hvor mye som kan gå galt.</p>
+      <p data-i="r-p2">Jeg lærte også at man må tørre å starte uten å ha alle svarene på forhånd. Uten det blir det ingen fremdrift. Feil oppstår underveis, og de må løses fortløpende.</p>
+      <p data-i="r-p3">Folk har forståelse for at feil kan oppstå. Det viktigste er å løse dem raskt.</p>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap">
+      <div class="closing-card">
+        <h2 data-html data-i="close-h2">La oss ta en <span style="font-style:italic">prat</span></h2>
+        <p data-i="close-p">Send meg en e-post eller en melding på LinkedIn, så tar vi det derfra. Jeg bor i Fredrikstad og tar oppdrag for hele Norge, på nettet eller på stedet.</p>
+        <div class="hero-cta">
+          <a href="mailto:maren@marenraae.no" class="btn light" data-i="close-cta1">maren@marenraae.no</a>
+          <a href="https://www.linkedin.com/in/maren-kathrine-raae/" target="_blank" rel="noopener" class="btn ghost" style="color:#fff;border-color:rgba(255,255,255,.5)" data-i="close-cta2">Finn meg på LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">Maren Kathrine Raae</div>
+        <p style="max-width:34ch;font-size:14.5px" data-i="foot-tag">CRM og kundeklubb, operativt og strategisk. Fredrikstad · Østfold.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4 data-i="foot-nav">Navigasjon</h4>
+          <a href="../index.html#tjenester" data-i="nav1">Tjenester</a>
+          <a href="../index.html#erfaring" data-i="navE">Erfaring</a>
+          <a href="../index.html#prosjekter" data-i="nav4">Prosjekter</a>
+          <a href="../index.html#om" data-i="nav2">Om meg</a>
+        </div>
+        <div class="foot-col">
+          <h4 data-i="foot-connect">Kontakt</h4>
+          <a href="mailto:maren@marenraae.no">maren@marenraae.no</a>
+          <a href="https://www.linkedin.com/in/maren-kathrine-raae/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Maren Kathrine Raae · Fredrikstad</span>
+      <span data-i="foot-made">Bygget med struktur, kaffe og AI.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const EN = {
+    back:'← All projects',
+    nav1:'Services', navE:'Experience', nav4:'Projects', nav2:'About',
+    'foot-tag':'CRM and loyalty clubs, operational and strategic. Fredrikstad · Norway.',
+    'foot-nav':'Navigation', 'foot-connect':'Contact', 'foot-made':'Built with structure, coffee and AI.',
+    'close-h2':'Let’s have a <span style="font-style:italic">chat</span>',
+    'close-p':'Send me an email or a message on LinkedIn, and we’ll take it from there. I live in Fredrikstad and take assignments all over Norway, online or on site.',
+    'close-cta1':'maren@marenraae.no', 'close-cta2':'Find me on LinkedIn',
+    eye:'Case · Product built with AI',
+    lead:'A quiz and prediction app for Norwegian teams. Here is what I did and what I learned.',
+    'app-lnk':'See the app ↗',
+    f1k:'My role', f1v:'Everything: idea, product, design, build and operations',
+    f2k:'For whom', f2v:'Teams at Norwegian workplaces',
+    f3k:'Tools', f4k:'What worked', f4v:'World Cup predictions with APIs',
+    'a-eye':'The starting point', 'a-h':'How do you get people to come back, week after week?',
+    'a-p1':'Most team quizzes end after a single evening, and then nothing more happens. I wanted to solve a different problem: creating a habit the team keeps going itself, without anyone having to follow up.',
+    'a-p2':'The solution was a competition that lasts over time. The team answers new questions, collects points and follows a league table. The questions are designed so that the answer cannot be looked up, and the answer key comes only once everyone has answered. The conversation therefore comes before the answer, and that is where team spirit is built.',
+    'b-eye':'What I did', 'b-h':'The whole app, from idea to operations',
+    d1v:'Defined', d1t:'the need: a simple competition for Friday quizzes, quarterly meetings and teams that are never in the same place.',
+    d2v:'Designed', d2t:'the experience to be ready in two minutes: create, share a link, and the team is playing.',
+    d3v:'Built in', d3t:'a reason to come back: a weekly rhythm, points, a league table and a crowned quiz champion of the quarter.',
+    d4v:'Wrote', d4t:'over 150 ready-made questions sorted by occasion, and made it possible to use your own KPIs as questions.',
+    d5v:'Built', d5t:'the app with Lovable and Supabase, with GitHub for the code, in Norwegian, English and Swedish, installable on the phone.',
+    d6v:'Set up', d6t:'APIs that fetch matches and results for the 2026 World Cup and Eliteserien, and hand out points automatically.',
+    d7v:'Set up', d7t:'consent for statistics and ads, and information about what happens to the answers.',
+    'm-eye':'What worked', 'm-h':'World Cup predictions',
+    'm-p1':'The World Cup predictions worked. I set up APIs that fetched matches and results, and the app handed out points to the participants automatically.',
+    'c-eye':'How it worked', 'c-h':'Ready in two minutes',
+    s1h:'Create a competition', s1p:'Choose from over 150 ready-made questions, or write your own for your team.',
+    s2h:'Share the link', s2p:'Copy the link and share it in Teams, Slack or by email. The team can start immediately.',
+    s3h:'The team guesses and debates', s3p:'Who believes who? The debate starts before the answer is revealed.',
+    s4h:'Season points', s4p:'Points build up week by week, and the team crowns the quarter’s quiz champion.',
+    cap2:'The inspiration page: ready-made questions sorted by occasion.', cap3:'The app on mobile.',
+    'v-eye':'What I learned', 'v-h':'A lot can go wrong',
+    v1h:'The programs you need', v1p:'Which programs and tools have to be in place for an app to work.',
+    v2h:'How much work it is', v2p:'There is a lot of work behind something that is supposed to work automatically.',
+    v3h:'The steps in the customer journey', v3p:'A customer journey has many steps on the technical side, and every step has to work.',
+    v4h:'What can go wrong', v4p:'A lot can go wrong along the way, and it has to be fixed quickly.',
+    'w-eye':'Along the way', 'w-h':'Challenges',
+    'w-p1':'The hardest part was thinking everything through in advance. That was especially true of the World Cup, where the app had to fetch matches and results and hand out points automatically.',
+    'w-p2':'The World Cup could not be tested beforehand. Errors therefore appeared along the way, and I fixed them as they came.',
+    'r-eye':'The result', 'r-h':'What I was left with',
+    'r-p1':'I was left with deeper knowledge of how demanding it is to set up something that is supposed to work automatically, and how much can go wrong.',
+    'r-p2':'I also learned that you have to dare to start without having all the answers in advance. Without that, there is no progress. Errors occur along the way, and they have to be fixed as they appear.',
+    'r-p3':'People understand that errors can occur. The most important thing is to fix them quickly.'
+  };
+  const NO = {};
+  document.querySelectorAll('[data-i]').forEach(el=>{ NO[el.getAttribute('data-i')] = el.innerHTML; });
+  let lang='no';
+  const langBtn=document.getElementById('lang');
+  langBtn.addEventListener('click',()=>{
+    lang = lang==='no' ? 'en' : 'no';
+    const dict = lang==='en' ? EN : NO;
+    document.querySelectorAll('[data-i]').forEach(el=>{
+      const k=el.getAttribute('data-i');
+      if(dict[k]!==undefined) el.innerHTML=dict[k];
+    });
+    langBtn.textContent = lang==='en' ? 'NO' : 'EN';
+    document.documentElement.lang = lang;
+  });
+</script>
+</body>
+</html>

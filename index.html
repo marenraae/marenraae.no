@@ -192,6 +192,7 @@
   .proj h3{font-size:21px;margin-bottom:8px}
   .proj .role{font-size:13px;color:var(--magenta);font-weight:600;letter-spacing:.02em;margin-bottom:10px}
   .proj p{font-size:14.5px;color:var(--muted);flex-grow:1}
+  .proj .status{display:inline-block;margin-left:6px;font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--magenta-deep);background:var(--blush);padding:3px 9px;border-radius:999px;vertical-align:1px}
   .proj .lnk{margin-top:16px;font-size:14px;font-weight:600;color:var(--ink);display:inline-flex;gap:6px;align-items:center}
   .proj .lnk:hover{color:var(--magenta)}
 
@@ -369,17 +370,17 @@
           <div class="body">
             <div class="role" data-i="p1-role">Lovable + Supabase</div>
             <h3>dagens.app</h3>
-            <p data-i="p1-p">Quiz for teambuilding, på norsk. Laget uten utvikler, til fredagsquiz og kvartalsmøter.</p>
-            <a href="https://dagens.app" target="_blank" rel="noopener" class="lnk">dagens.app ↗</a>
+            <p data-i="p1-p">Quiz- og tippeapp for norske team, med API-er som henter inn kamper og resultater. Her er hva jeg gjorde og lærte.</p>
+            <a href="dagens/" class="lnk" data-i="case-lnk">Les caset →</a>
           </div>
         </div>
         <div class="proj reveal">
           <div class="thumb"><img src="illechill.png" alt="Ille Chill nettbutikk" /></div>
           <div class="body">
-            <div class="role" data-i="p2-role">Nettbutikk</div>
+            <div class="role"><span data-i="p2-role">Nettbutikk</span> <span class="status" data-i="status2">Avviklet</span></div>
             <h3>Ille Chill</h3>
-            <p data-i="p2-p">Nettbutikk der produktene trykkes når noen bestiller. Laget uten utvikler og designbyrå.</p>
-            <a href="https://illechill.no" target="_blank" rel="noopener" class="lnk">illechill.no ↗</a>
+            <p data-i="p2-p">Nettbutikk med Print on Demand (POD). Avviklet, men jeg har samlet hva jeg lærte i en case.</p>
+            <a href="illechill/" class="lnk" data-i="case-lnk2">Les caset →</a>
           </div>
         </div>
         <div class="proj reveal">
@@ -472,7 +473,6 @@
           <h4 data-i="foot-connect">Kontakt</h4>
           <a href="mailto:maren@marenraae.no">maren@marenraae.no</a>
           <a href="https://www.linkedin.com/in/maren-kathrine-raae/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://dagens.app" target="_blank" rel="noopener">dagens.app</a>
         </div>
       </div>
     </div>
@@ -523,9 +523,10 @@
     'proj-h2':'Things I have built myself, <span class="accent">with AI as a tool</span>',
     'proj-sub':'I learn best by making things. Here are three.',
     'p1-role':'Lovable + Supabase',
-    'p1-p':'A team-building quiz, in Norwegian. Made without a developer, for Friday quizzes and quarterly meetings.',
+    'p1-p':'A quiz and prediction app for Norwegian teams, with APIs that fetch matches and results. Here is what I did and learned.',
     'p2-role':'Web shop',
-    'p2-p':'A web shop where products are printed when someone orders. Made without a developer or a design agency.',
+    'p2-p':'A web shop with Print on Demand (POD). Discontinued, but I have gathered what I learned in a case study.',
+    status2:'Discontinued', 'case-lnk':'Read the case →', 'case-lnk2':'Read the case →',
     'p3-role':'WordPress + Claude',
     'p3-p':'A new website for the sports club, made for free. They update it themselves. Built in Claude.',
     'about-eye':'Hi, I’m Maren',

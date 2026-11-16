@@ -1,0 +1,152 @@
+:root{
+  --ivory:#F7F2EA;
+  --ivory-2:#EFE6D9;
+  --paper:#FCF9F4;
+  --ink:#1C1418;
+  --wine:#25101C;
+  --magenta:#C71E77;
+  --magenta-deep:#9E1360;
+  --blush:#F0DBE6;
+  --muted:#6E5E66;
+  --line:#E3D8C8;
+  --serif:'Fraunces',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--ivory);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.narrow{max-width:760px}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spacing:-.01em}
+.accent{color:var(--magenta);font-style:italic}
+
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--magenta);display:inline-flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--magenta);display:inline-block}
+
+header.nav{position:sticky;top:0;z-index:50;background:rgba(247,242,234,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{font-family:var(--serif);font-size:20px;letter-spacing:-.01em}
+.brand b{font-weight:500}
+.nav-cta{display:flex;align-items:center;gap:18px}
+.back{font-size:14.5px;color:var(--muted);transition:color .2s}
+.back:hover{color:var(--ink)}
+.lang{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--muted);cursor:pointer;background:transparent;transition:.2s;font-family:var(--sans)}
+.lang:hover{border-color:var(--magenta);color:var(--magenta)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--paper);padding:12px 20px;border-radius:999px;font-size:14px;font-weight:500;transition:.25s;border:1px solid var(--ink)}
+.btn:hover{background:var(--magenta);border-color:var(--magenta)}
+.btn.light{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.btn.light:hover{background:var(--magenta);color:var(--paper);border-color:var(--magenta)}
+
+/* Hero */
+.case-hero{padding:72px 0 40px}
+.case-hero h1{font-size:clamp(44px,6.4vw,80px);margin:22px 0 20px}
+.case-hero .lead{font-size:20px;color:var(--muted);max-width:40ch}
+.badge{display:inline-block;font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--magenta-deep);background:var(--blush);padding:6px 12px;border-radius:999px;margin-left:12px;vertical-align:middle}
+
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;border-top:1px solid var(--line);margin-top:44px;padding-top:28px}
+.fact .k{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta)}
+.fact .v{font-family:var(--serif);font-size:19px;margin-top:6px}
+
+/* Bilder */
+.shot{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--paper);box-shadow:0 22px 44px rgba(37,16,28,.08)}
+.shot img{width:100%;height:auto;display:block}
+.shot-wrap{padding:16px 0 64px}
+/* Karusell, som i Elementor: piler på sidene og prikker under */
+.car-stage{position:relative;margin-top:8px}
+.car-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;-webkit-overflow-scrolling:touch;border-radius:16px}
+.car-track::-webkit-scrollbar{display:none}
+.car-track:focus-visible{outline:2px solid var(--magenta);outline-offset:4px}
+.car-slide{flex:0 0 calc((100% - 40px) / 3);scroll-snap-align:start;aspect-ratio:4/5;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:var(--ivory-2)}
+.car-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.car-btn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--paper);color:var(--ink);font-size:22px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(37,16,28,.16);transition:.2s;z-index:2}
+.car-btn:hover:not(:disabled){background:var(--magenta);border-color:var(--magenta);color:var(--paper)}
+.car-btn:disabled{opacity:.35;cursor:default}
+.car-btn.prev{left:-20px}
+.car-btn.next{right:-20px}
+.car-dots{display:flex;justify-content:center;gap:10px;margin-top:22px}
+.car-dot{width:9px;height:9px;border-radius:50%;border:none;padding:0;background:#d9ccbd;cursor:pointer;transition:.2s}
+.car-dot[aria-current="true"]{background:var(--magenta);transform:scale(1.25)}
+@media (prefers-reduced-motion:reduce){.car-track{scroll-behavior:auto}}
+.caption{font-size:13.5px;color:var(--muted);margin-top:12px}
+.shots-2{display:grid;grid-template-columns:1.5fr 1fr;gap:22px;align-items:start}
+.shots-2 .phone{max-width:320px;justify-self:center}
+
+/* Innhold */
+.block{padding:56px 0;border-top:1px solid var(--line)}
+.block h2{font-size:clamp(28px,3.6vw,40px);margin:16px 0 22px}
+.block p{font-size:17px;color:#4a3d43;margin-bottom:16px;max-width:62ch}
+.steps{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:28px}
+.steps li{counter-increment:s;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:26px 26px 24px}
+.steps li::before{content:"0" counter(s);font-family:var(--serif);font-size:14px;color:var(--magenta);letter-spacing:.1em}
+.steps h3{font-size:21px;margin:12px 0 8px}
+.steps p{font-size:15px;color:var(--muted);margin:0}
+.list{list-style:none;margin-top:10px}
+.list li{padding:14px 0 14px 28px;border-bottom:1px solid var(--line);font-size:16.5px;color:#4a3d43;position:relative;max-width:62ch}
+.list li::before{content:"";position:absolute;left:0;top:25px;width:14px;height:1px;background:var(--magenta)}
+.list li b{color:var(--ink);font-weight:600}
+
+/* "Dette viser jeg" på mørk bakgrunn */
+.block.dark{background:var(--wine);color:var(--paper);border-top:none}
+.block.dark .eyebrow{color:#f0a9cc}
+.block.dark .eyebrow::before{background:#f0a9cc}
+.block.dark h2{color:var(--paper)}
+.block.dark .intro-p{color:#d9bccb;font-size:17px;max-width:56ch;margin-bottom:0}
+.points{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:44px;border-top:1px solid rgba(240,169,204,.25)}
+.points.four{grid-template-columns:repeat(4,1fr)}
+.point{padding:30px 26px 10px 0;border-right:1px solid rgba(240,169,204,.18)}
+.point+.point{padding-left:26px}
+.point:last-child{border-right:none;padding-right:0}
+.point .n{font-family:var(--serif);font-size:14px;color:#f0a9cc;letter-spacing:.1em}
+.point h3{color:var(--paper);font-size:23px;margin:14px 0 10px}
+.point p{color:#cdb0be;font-size:15px;margin:0}
+.did{list-style:none;margin-top:6px}
+.did li{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline;max-width:820px}
+.did .v{font-family:var(--serif);font-size:21px;color:var(--magenta)}
+.did .t{font-size:16.5px;color:#4a3d43}
+
+/* Utkast-felt som Maren må fylle inn */
+.todo{border:2px dashed var(--magenta);border-radius:16px;background:#fff6fa;padding:20px 24px;margin:8px 0 8px;max-width:62ch}
+.todo strong{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta-deep);margin-bottom:8px}
+.todo ul{margin:6px 0 0 18px;font-size:15px;color:#4a3d43}
+.todo p{font-size:15px;margin-bottom:6px}
+
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.closing{padding:96px 0}
+.closing-card{background:var(--magenta);color:var(--paper);border-radius:28px;padding:72px 56px;text-align:center;position:relative;overflow:hidden}
+.closing-card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 10%,rgba(255,255,255,.16),transparent 45%)}
+.closing-card h2{font-size:clamp(30px,4.4vw,50px);color:var(--paper);position:relative;max-width:20ch;margin:0 auto}
+.closing-card p{color:#ffe3ef;font-size:17px;margin:22px auto 34px;max-width:46ch;position:relative}
+.closing-card .btn,.closing-card .hero-cta{position:relative}
+.closing-card .hero-cta{justify-content:center}
+
+/* Bunntekst, lik forsiden */
+footer.site{background:var(--wine);color:#cdb0be;padding:60px 0 40px}
+.foot-grid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;align-items:flex-start}
+footer.site .brand{color:var(--paper);font-size:24px;margin-bottom:10px}
+footer.site a{color:#cdb0be;transition:.2s}
+footer.site a:hover{color:var(--paper)}
+.foot-links{display:flex;gap:40px;flex-wrap:wrap}
+.foot-col h4{font-family:var(--sans);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#f0a9cc;margin-bottom:14px;font-weight:600}
+.foot-col a{display:block;font-size:14.5px;margin-bottom:9px}
+.foot-bottom{border-top:1px solid rgba(240,169,204,.2);margin-top:44px;padding-top:22px;font-size:13px;color:#9c7d8b;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+@media(max-width:900px){
+  .facts{grid-template-columns:repeat(2,1fr)}
+  .steps,.shots-2{grid-template-columns:1fr}
+  .car-slide{flex-basis:calc((100% - 20px) / 2)}
+  .car-btn.prev{left:8px}
+  .car-btn.next{right:8px}
+  .points,.points.four{grid-template-columns:1fr}
+  .point,.point+.point{border-right:none;border-bottom:1px solid rgba(240,169,204,.18);padding:26px 0}
+  .point:last-child{border-bottom:none}
+  .did li{grid-template-columns:1fr;gap:4px}
+}
+@media(max-width:560px){
+  .wrap{padding:0 20px}
+  .nav-cta .back{display:none}
+  .car-slide{flex-basis:84%}
+  .closing-card{padding:52px 26px}
+}
