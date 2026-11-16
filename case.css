@@ -50,7 +50,8 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(247,242,234,.82);bac
 
 /* Bilder */
 .shot{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--paper);box-shadow:0 22px 44px rgba(37,16,28,.08)}
-.shot img{width:100%;height:auto;display:block}
+.shot img,.shot video{width:100%;height:auto;display:block}
+.shot video{background:#0b1736}
 .shot-wrap{padding:16px 0 64px}
 /* Karusell, som i Elementor: piler på sidene og prikker under */
 .car-stage{position:relative;margin-top:8px}
